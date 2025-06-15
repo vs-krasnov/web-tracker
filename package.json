@@ -1,0 +1,17 @@
+{
+  "name": "seat-watcher",
+  "version": "2.1.0",
+  "type": "module",
+  "scripts": {
+    "check": "ts-node src/checkSeats.ts",
+    "loop":  "ts-node src/checkSeats.ts --loop"
+  },
+  "dependencies": {
+    "node-fetch": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "24.0.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  }
+}
