@@ -3,14 +3,15 @@
   "version": "2.1.0",
   "type": "module",
   "scripts": {
-    "check": "ts-node src/checkSeats.ts",
-    "loop":  "ts-node src/checkSeats.ts --loop"
+    "check": "ts-node --esm src/checkSeats.ts",
+    "loop": "ts-node --esm src/checkSeats.ts --loop"
   },
   "dependencies": {
     "node-fetch": "3.3.2"
   },
   "devDependencies": {
     "@types/node": "24.0.1",
+    "dotenv": "16.5.0",
     "ts-node": "10.9.2",
     "typescript": "5.8.3"
   }
