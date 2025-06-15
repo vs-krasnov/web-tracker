@@ -31,4 +31,4 @@ jobs:
           TEXT_TO_FIND:  ${{ secrets.TEXT_TO_FIND }}
           DEBUG_WATCHER: ${{ secrets.DEBUG_WATCHER }}
           INTERVAL_SEC:  "60"          # change to "30" for 30-second cadence
-        run: npx ts-node src/checkSeats.ts --loop
+        run: npx ts-node -esm src/checkSeats.ts --loop
