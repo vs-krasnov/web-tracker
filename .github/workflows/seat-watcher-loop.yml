@@ -25,10 +25,10 @@ jobs:
 
       - name: Run 60-s polling loop
         env:
-          TG_BOT_TOKEN:  ${{ secrets.TG_BOT_TOKEN }}
-          TG_CHAT_ID:    ${{ secrets.TG_CHAT_ID }}
-          COURSE_URL:    ${{ secrets.COURSE_URL }}
-          TEXT_TO_FIND:  ${{ secrets.TEXT_TO_FIND }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+          COURSE_URL: ${{ secrets.COURSE_URL }}
+          TEXT_TO_FIND: ${{ secrets.TEXT_TO_FIND }}
           DEBUG_WATCHER: ${{ secrets.DEBUG_WATCHER }}
-          INTERVAL_SEC:  "60"          # change to "30" for 30-second cadence
-        run: npx ts-node --esm src/checkSeats.ts --loop
+          INTERVAL_SEC: "60"          # change to "30" for 30-second cadence
+        run: node --loader ts-node/esm src/checkSeats.ts --loop

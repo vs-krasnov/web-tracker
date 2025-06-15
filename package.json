@@ -3,8 +3,8 @@
   "version": "2.1.0",
   "type": "module",
   "scripts": {
-    "check": "ts-node --esm src/checkSeats.ts",
-    "loop": "ts-node --esm src/checkSeats.ts --loop"
+    "check": "node --loader ts-node/esm src/checkSeats.ts",
+    "loop": "node --loader ts-node/esm src/checkSeats.ts --loop"
   },
   "dependencies": {
     "node-fetch": "3.3.2"
